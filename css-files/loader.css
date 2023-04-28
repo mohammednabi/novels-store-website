@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+
+
+
+@keyframes allthings {
+    0%{
+      opacity: 100%;  
+    }
+
+    90%{
+        opacity: 100%;
+    }
+
+    100%{
+        opacity: 0%;
+    }
+
+}
+
+@keyframes bookmotion {
+
+    0%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+}
+
+    50%{
+        transform: translateY(20px);
+        -webkit-transform: translateY(20px);
+        -moz-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        -o-transform: translateY(20px);
+}
+
+    100%{
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+    
+}
+
+@keyframes particlemotion {
+
+    0%{
+        opacity: 100%;
+}
+
+    50%{
+       opacity: 0%;
+}
+
+    100%{
+       opacity: 100%;
+    }
+    
+}
+
+@keyframes loading {
+
+    0%{
+        color: white;
+        letter-spacing: 4px;
+}
+
+    25%{
+        color:rgb(248, 255, 191);
+       
+         letter-spacing: 6px;
+      
+}
+
+    50%{
+       color: white;
+       
+        letter-spacing: 4px;
+       
+}
+
+75%{
+       color:rgb(248, 255, 191);
+     
+        letter-spacing: 6px;
+      
+}
+
+100%{
+       color: white;
+        letter-spacing: 4px;
+       
+}
+    
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(23, 1, 17);
+    display: grid;
+    place-items: center;
+   
+    /* animation-name: allthings;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out; */
+
+    
+
+}
+
+.parentloader{
+    
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+     z-index: 9999999;
+     
+     
+     
+}
+
+.magicimg{
+    position:absolute;
+    width: calc(1069px/5);
+    height: calc(466px/5);
+    top: 43%;
+    left: 43%;
+    animation-name: bookmotion;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+.particleimg{
+    width: calc(4500px/10);
+    height: calc(4453px/10);
+    position: absolute;
+    top: 12%;
+    left: 35%;
+    animation-name: particlemotion;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+   
+
+}
+
+.container h1{
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    top: 60%;
+    letter-spacing: 4px;
+    font-family: harry p;
+    text-transform: uppercase;
+    animation-name: loading;
+    animation-duration: 6s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
